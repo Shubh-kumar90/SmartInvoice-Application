@@ -17,9 +17,8 @@ public class CorsConfig {
         CorsConfiguration config =
                 new CorsConfiguration();
 
-        config.addAllowedOrigin(
-                "http://localhost:5173"
-        );
+        config.addAllowedOriginPattern("*");
+        
 
         config.addAllowedHeader("*");
 
